@@ -104,7 +104,34 @@
   height: auto; /* Maintains the aspect ratio */
   margin: 10px; /* Optional: add some space around the images */
 }
-
+<style>
+  .certifications-section {
+    padding: 50px;
+  }
+  .certifications-section h2 {
+    color: #33ba11;
+    margin-bottom: 20px;
+  }
+  .certifications-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Add this line */
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  }
+  .certifications-list li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center; /* Center the text inside each list item */
+  }
+  .certifications-list img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
 
   </style>
 </head>
