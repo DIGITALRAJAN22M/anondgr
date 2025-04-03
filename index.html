@@ -1,422 +1,735 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="icon" type="image/icon" href="weblogo.ico">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <title>DIGITAL RAJAN 22M</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      overflow-y: auto; /* Enable vertical scrolling */
-      color: #00ffff; /* Aqua color */
-      text-align: center;
-    }
-    video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-    header {
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-    nav {
-      background-color: black;
-      padding: 1px; /* Adjust the padding (height) as needed */
-      display: flex;
-      justify-content: center;
-    }
-    nav a {
-      color: #00ff00; /* Green color */
-      font-weight: bold;
-      text-decoration: none;
-      padding: 10px;
-      margin: 0 10px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    nav a:hover {
-      background-color: #fff;
-      color: #333;
-    }
-    section {
-      padding: 20px;
-    }
-    section h2 {
-      color: #00ff00; /* Green color */
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-    }
-    section p {
-      color: #00ffff; /* Aqua color */
-      line-height: 1.6;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1px 0; /* Adjust the vertical padding as needed */
-      margin: 0;
-    }
-    .h1:hover{
-    transform: scale3d(1.03);
-    background-color: aquamarine;
-    color: black;
-    box-shadow: 0 0 25px aquamarine;
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rajan Kumar Barik Cybersecurity Professional</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  }
-  h2{
-    text-align: center;
-    display:  inline-block;
-    padding: 1rem 2.8rem;
-    background-color: black;
-    border-radius: 2rem;
-    font-size: 1.6rem;
-    color: aquamarine;
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    border: 4px solid aquamarine;
-    transition: 0.3s ease;
-    cursor: pointer;
-    
+  <!-- Favicons -->
+   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+   <link rel="manifest" href="assets/img/favicon_io/site.webmanifest">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    
-  }
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-  .h2:hover{
-    transform: scale3d(1.03);
-    background-color: aquamarine;
-    color: black;
-    box-shadow: 0 0 30px aquamarine;
-  }
-    .skills-section {
-      padding: 50px;
-    }
-    .skills-section h2 {
-      color: #33ba11;
-      margin-bottom: 20px;
-    }
-    .skills-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .skills-list li {
-      margin: 10px;
-      padding: 10px;
-      background-color: #444;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .border-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-  } 
-  
-  
-  .border-list a{
-        margin: 10px;
-        padding: 10px;
-        background-color: rgb(29, 173, 87);
-        border-radius: 5px;
-        font-weight: bold;
-      }
-    #profile-photo {
-  width: 100px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-  border-radius: 50%; /* Make it a circle */
-  position: fixed;
-  bottom: 20px; /* Adjust the distance from the bottom */
-  right: 20px; /* Adjust the distance from the right */
-  z-index: 2;
-}
-    .certifications-list img {
-  width: 200px; /* Adjust the width as needed */
-  height: auto; /* Maintains the aspect ratio */
-  margin: 10px; /* Optional: add some space around the images */
-}
-<style>
- .certifications-section {
-    padding: 50px;
-  }
-  .certifications-section h2 {
-    color: #33ba11;
-    margin-bottom: 20px;
-  }
-  .certifications-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Add this line */
-    justify-content: center; /* Center the items horizontally */
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-  }
-  .certifications-list li {
-    margin: 10px;
-    padding: 10px;
-    background-color: #020001;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center; /* Center the text inside each list item */
-  }
- .certifications-list img {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-    border: 2px solid #f3f303; /* Change the border color as needed */
-  }
-    .logo-page a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    border: 0.2rem solid aquamarine;
-    font-size: 2rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-    color: aquamarine;
-}
-.logo-page a:hover{
-    color: black;
-    transform: scale(1.3) translateY(-5px);
-    background-color: aquamarine;
-    box-shadow: 0  0 25px aquamarine;
-}
-  </style>
 </head>
-<body>
-  <video autoplay loop muted>
-    <source src="background.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <header>
-    <h1>Rajan Kumar (ANONDGR)</h1>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">ANONDGR</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Project</a></li>
+          <li><a href="#certifications">Certification</a></li>
+          <li><a href="#achievements">Achievement</a></li>
+          <li><a href="#job-simulations">Job Simulation</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Ping Me</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
   </header>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#abt">About</a>
-    <a href="#cm">Contact</a>
-  </nav>
-  <section>
-    <h2 id="home">Home</h2>
-    <p>Welcome to my professional portfolio! I'm Rajan Kumar, also known as ANONDGR. This website serves as a digital space where you can gain deeper insights into my journey in the realm of Cyber Security and Ethical Hacking. As a dedicated White Hat Hacker, my passion lies in ensuring digital security through ethical means, with a focus on penetration testing and proactive defense strategies. This platform offers a glimpse into my diverse skill set, hands-on experiences, and the impactful projects that shape my professional identity. Whether you're a potential employer seeking expertise, a collaborator exploring synergies, or simply someone curious about my work, feel free to navigate through these pages. I am committed to continuous learning and growth, and this portfolio stands as a testament to my dedication to sharing knowledge and experiences with the global community. Thank you for visiting, and I hope you find both informative and inspiring content here!</p>
-  </section>
-  <section>
-    <h2 id="abt">About Me</h2>
-    <p>Hello, I'm Rajan Kumar, a 19-year-old on a dynamic journey toward a Bachelor's degree in Computer Applications (BCA). My foray into the world of technology is fueled by an unwavering passion for unraveling the intricacies of computer science. Armed with a robust understanding of computer fundamentals and networking, I have delved into the captivating realms of penetration testing and ethical hacking. My active engagement on platforms such as TryHackMe and Hack The Box has been instrumental in refining my skills through hands-on labs, problem-solving, and staying abreast of the latest developments in cybersecurity. This relentless pursuit of knowledge is a testament to my commitment to continuous learning and staying at the forefront of the dynamic field of information security. I invite you to join me on this exciting journey as I explore, learn, and contribute to the ever-evolving world of technology. Your presence and support are highly valued, and together, let's navigate the fascinating landscape of cybersecurity and beyond!</p>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/back-img.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up"
+        data-aos-delay="100">
+        <h2>It's Rajan Kumar Barik </h2>
+        <p><span class="typed" data-typed-items="Cybersecurity Analyst, Penetration Tester , Bug Bounty Hunter , CTF Player , Youtuber , Professional Content Writer"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/rajan.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Rajan Kumar Barik (ANONDGR)</span></p>
+                <p><strong>Profile: </strong> <span>Cybersecurity Professional</span></p>
+                <p><strong>Email: </strong> <span>digitalrajanofficial@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>+918144259706</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h2><b>Skills</b></h2>
+
+              <div class="progress">
+                <span class="skill"><span>Cybersecurity & Penetration Testing</span> <i class="val">99.9%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="99.9" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Programming & Scripting </span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Ethical Hacking & Bug Bounty</span> <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>CTF & Vulnerability Research</span> <i class="val">89%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Active Directory & Privilege Escalation</span> <i class="val">81%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div><!-- End Skills Item -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                Hello! I’m Rajan Kumar Barik Also Known As ANONDGR in Hacker's Community , a passionate Cybersecurity Enthusiast and Penetration Tester with a strong focus on ethical hacking, vulnerability analysis, and system hardening and actively ranking on the top 1% in TryHackMe With over 2.3 years of hands-on experience in cybersecurity Learning, I specialize in identifying vulnerabilities, exploiting weaknesses, and safeguarding systems to ensure resilience against evolving threats.
+              </p>
+              <p>
+                Currently pursuing a Bachelor’s in Computer Applications (BCA), I am well-versed in areas such as Network(End-Point-Sec)Security, Web Application Security, Active Directory ,Reverse Engineering , Binary Exploitation , System Security , Digital Forensics , OSINT And A basics of Cloud (AWS) And AI (Artificial Intelligence ) . My journey includes discovering critical vulnerabilities through bug bounty platforms, contributing to CTF challenges, and honing my skills with real-world penetration testing tools and methodologies..
+              </p>
+              <p>
+                I am driven by my passion for breaking down complex systems and finding innovative solutions. Whether working independently or in collaboration with a team, I am dedicated to crafting secure, robust systems while continually enhancing my knowledge in the ever-evolving field of cybersecurity.
+              </p>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+    <!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="education" class="resume section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4> BACHELOR OF COMPUTER APPLICATIONS &amp; Specialization in Cybersecurity
+              </h4>
+              <h5>2022 - 2025</h5>
+              <p><em>Academy Of Business Administration , Balasore, Odisha, IN</em></p>
+              <p>Throughout my BCA journey, I have developed a strong foundation in computer science and programming, mastering languages such as C, C++, Java, Python, JavaScript, PHP and Bash. I’ve gained proficiency in database management, and MySQL, alongside an in-depth understanding of operating systems, computer fundamentals, and computer networking. My studies have also encompassed key areas like Unix and mathematics, enabling me to tackle complex problems with analytical and logical approaches. This diverse skill set has provided me with the technical expertise to pursue my passion for cybersecurity, where I apply my knowledge to secure systems and develop innovative solutions..</p>
+            </div><!-- End Resume Item -->
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Cybersecurity Intern</h4>
+              <h5>2024 [ Jul-Aug ]</h5>
+              <p><em>NullClass (Remote)</em></p>
+              <ul>
+                <li>Conducted vulnerability assessments and penetration testing to identify and mitigate security risks
+                  in systems and applications.</li>
+                <li>Conducted live bug hunting on HackerOne and Bugcrowd, successfully identifying and reporting three valid vulnerabilities.</li>
+                <li>Developed and documented cybersecurity policies and best practices to support compliance and risk
+                  management efforts.</li>
+                <li>Successfully Pwned an Active HackTheBox machine with a medium difficulty level and published a detailed blog post on Medium outlining the exploitation process.</li>
+              </ul>
+
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>Delivering cutting-edge solutions and innovative security tools to fortify the digital landscape.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-cy">Cybersecurity</li>
+            <li data-filter=".filter-dev">Development</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cy">
+              <img src="assets/img/portfolio/img-dgrnet.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dgrnet</h4>
+                <p>An alternative to Netcat that enables reverse and blind shell connections.</p>
+                <a href="assets/img/portfolio/img-dgrnet.png" title="Dgrnet"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cy">
+              <img src="assets/img/portfolio/img-anonscan.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>AnonScan</h4>
+                <p>A Simple Network Scanning Tool Capable Of Detecting Open And Close Ports On Target </p>
+                <a href="assets/img/portfolio/img-anonscan.png" title="Anonscan" data-gallery="portfolio-gallery-product"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cy">
+              <img src="assets/img/portfolio/anondgr-room.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Anondgr TryHackMe Boot-2-root Machine </h4>
+                <p>Anondgr is a TryHackMe CTF room designed to challenge your skills in web exploitation, enumeration, and privilege escalation.</p>
+                <a href="assets/img/portfolio/anondgr-room.png" title="Anondgr Machine"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dev">
+              <img src="assets/img/portfolio/anon-bot.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Anondgr Bot</h4>
+                <p>Anondgr_bot is a Python-based automation bot I developed, enabling users to streamline tasks such as opening YouTube, WhatsApp, VS Code, Chrome, Firefox, Explorer, and many more. It can be customized to automate various functions based on user preferences</p>
+                <a href="assets/img/portfolio/anon-bot.png" title="Anon-Bot"
+                  data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Certifications Section -->
+<section id="certifications" class="certifications section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <p>Demonstrated expertise through industry-recognized certifications and a solid academic background in cybersecurity and technology.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 gx-lg-5">
+
+      <div class="col-lg-12">
+        <div class="certifications-item d-flex justify-content-between">
+          <h3>ETHICAL HACKING ESSENTIALS (EHE EC-Council)</h3>
+          <h4>2024</h4>
+        </div>
+      </div><!-- End Certifications Item -->
+
+      <div class="col-lg-12">
+        <div class="certifications-item d-flex justify-content-between">
+          <h3>Certified Network Security Practitioner (CNSP)</h3>
+          <h4>2025</h4>
+        </div>
+      </div><!-- End Certifications Item -->
+
+      <div class="col-lg-12">
+        <div class="certifications-item d-flex justify-content-between">
+          <h3>END-POINT SECURITY CERTIFICATION (CISCO)</h3>
+          <h4>2024</h4>
+        </div>
+      </div><!-- End Certifications Item -->
+
+    </div>
+
+    <!-- Certification Images Row -->
+    <div class="row mt-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <img src="assets/img/portfolio/EHE-CERT.jpg" class="cert-img img-fluid" alt="Ethical Hacking Essential">
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <img src="assets/img/portfolio/cnsp.jpg" class="cert-img img-fluid" alt="CNSP">
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <img src="assets/img/portfolio/cisco.jpg" class="cert-img img-fluid" alt="CISCO">
+      </div>
+    </div><!-- End Certification Images Row -->
+
+  </div>
+
+</section><!-- /Certifications Section -->
+
+<!-- Inline CSS -->
+<style>
+  .cert-img {
+      width: 100%;  /* Makes images responsive */
+      height: auto;
+      max-width: 350px; /* Controls max width for consistency */
+      display: block;
+      margin: auto;
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .cert-img:hover {
+      transform: scale(1.15); /* Zoom effect on hover */
+  }
+</style>
+
+   <!-- Achievements Section -->
+<section id="achievements" class="achievements section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Achievements</h2>
+  </div><!-- End Section Title -->
+
+  <!-- Achievement 1 -->
+  <div class="achievement-item">
+    <pre style="text-align: center; font-size: 2em; font-weight: bold;">Snyk Fetch the Flag CTF 2025</pre>
+    <hr>  
+    <p><i>Secured 130th position out of 1,201 teams across the world, competing among 5,892 players. This achievement showcases exceptional problem-solving and cybersecurity skills in a highly competitive environment.</i></p>
+    <div style="text-align: center;">
+      <img src="assets/img/portfolio/snyk.jpg" alt="snyk-ctf" style="max-width: 100%; height: auto; width: 40%; transition: transform 0.3s ease;"/>
+    </div>
+    <hr>
+  </div>
+  
+  <!-- Achievement 2 -->
+  <div class="achievement-item">
+    <pre style="text-align: center; font-size: 2em; font-weight: bold;">AI vs Human CTF Challenge HackTheBox</pre>
+    <p><i>Achieved a global ranking of 14th and an All India ranking of 2nd in the AI vs Human CTF Challenge, competing against 404 teams from across the globe, showcasing exceptional problem-solving and cybersecurity expertise in a highly competitive environment.</i></p>
+    <div style="text-align: center;">
+      <img src="assets/img/portfolio/ai-vs-humanctf.png" alt="ai-vs-human-ctf" style="max-width: 100%; height: auto; width: 40%; transition: transform 0.3s ease;"/>
+    </div>
+    <hr>
+  </div>
+
+  <!-- Achievement 3 -->
+  <div class="achievement-item">
+    <pre style="text-align: center; font-size: 2em; font-weight: bold;">Cyber Apocalypse CTF 2025</pre>
+    <p><i>Secured 140th place globally in the Hack The Box Cyber Apocalypse CTF 2025, competing against over 8,130 teams worldwide, demonstrating strong technical skills and problem-solving abilities in a highly challenging cybersecurity competition.</i></p>
+    <div style="text-align: center;">
+      <img src="assets/img/portfolio/cyber-apo.png" alt="cyber-apocalypse" style="max-width: 100%; height: auto; width: 40%; transition: transform 0.3s ease;"/>
+    </div>
+    <hr>
+  </div>
+
+  <!-- Achievement 4 -->
+  <div class="achievement-item">
+    <pre style="text-align: center; font-size: 2em; font-weight: bold;">Bugcrowd College Rules CTF</pre>
+    <p><i>Secured 18th place out of 64 teams in the Bugcrowd College Rules CTF Challenge, showcasing strong cybersecurity skills and strategic problem-solving in a competitive environment.</i></p>
+    <div style="text-align: center;">
+      <img src="assets/img/portfolio/bugcroud.png" alt="bugcrowd-ctf" style="max-width: 100%; height: auto; width: 40%; transition: transform 0.3s ease;"/>
+    </div>
+    <hr>
+  </div>
+
+</section><!-- End Achievements Section -->
+
+<!-- Add this CSS inline within the page -->
+<style>
+  /* Image hover effect to enlarge the image */
+  .achievement-item img:hover {
+    transform: scale(1.1); /* Makes the image 10% larger */
+    cursor: pointer; /* Changes cursor to indicate the image is interactive */
+  }
+</style>
+
+
+<!-- Job Simulation Section -->
+<section id="job-simulations" class="job-simulations section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Job Simulations</h2>
+  </div><!-- End Section Title -->
+
+ <!-- Job Simulation Item 1 -->
+<div class="job-simulation-item" style="background-color: #040d20; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+  <h3 style="font-size: 1.5em; text-align: center;">Tata Group - Cybersecurity Analyst Job Simulation</h3> <!-- Heading added here -->
+  <p style="text-align: center; font-size: 1.1em; margin-bottom: 15px;">This job simulation provided an immersive experience of working as a Cybersecurity Analyst at Tata Group. It involved analyzing and securing a simulated network environment, identifying potential vulnerabilities, and implementing effective strategies to mitigate cybersecurity threats. The simulation allowed me to apply advanced techniques in threat detection, risk assessment, and incident response, mirroring the tasks and responsibilities of a real-world cybersecurity professional.</p>
+  <div style="text-align: center;">
+    <img src="assets/img/portfolio/tata.png" alt="tata-ctf" 
+         style="max-width: 100%; height: auto; width: 40%; transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 8px;" 
+         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" 
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"/>
+    <hr>
+  </div>
+</div>
+
+
+ <!-- Job Simulation Item 2 -->
+<div class="job-simulation-item" style="background-color: #040d20; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+  <h3 style="font-size: 1.5em; text-align: center;">AIG Shields Up Cybersecurity Job Simulation</h3> <!-- Heading added here -->
+  <p style="text-align: center; font-size: 1.1em; margin-bottom: 15px;">This job simulation offered a hands-on experience in cybersecurity operations, focusing on defending critical infrastructure in a simulated environment. Working as part of the cybersecurity team at AIG, I was tasked with identifying and neutralizing cyber threats, managing firewalls, and responding to simulated security incidents. The challenge emphasized real-world application of defensive strategies, threat intelligence analysis, and proactive risk management to safeguard sensitive data and maintain business continuity.</p>
+  <div style="text-align: center;">
+    <img src="assets/img/portfolio/aig.png" alt="aig-ctf" 
+         style="max-width: 100%; height: auto; width: 40%; transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 8px;" 
+         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" 
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"/>
+    <hr>
+  </div>
+</div>
+
+<!-- Job Simulation Item 3 -->
+<div class="job-simulation-item" style="background-color: #040d20; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+  <h3 style="font-size: 1.5em; text-align: center;">ANZ Australia Cyber Security Management Job Simulation</h3> <!-- Heading added here -->
+  <p style="text-align: center; font-size: 1.1em; margin-bottom: 15px;">This job simulation provided an in-depth understanding of cybersecurity management within a large financial institution like ANZ Australia. I was responsible for overseeing the development and implementation of security policies, conducting risk assessments, and coordinating responses to security incidents. The simulation also involved evaluating and optimizing security infrastructure to ensure compliance with industry standards and regulatory requirements. It enhanced my strategic thinking in managing security operations and mitigating risks in a highly dynamic and regulated environment.</p>
+  <div style="text-align: center;">
+    <img src="assets/img/portfolio/anz.png" alt="anz-ctf" 
+         style="max-width: 100%; height: auto; width: 40%; transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 8px;" 
+         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" 
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"/>
+    <hr>
+  </div>
+</div>
+
+<!-- Job Simulation Item 4 -->
+<div class="job-simulation-item" style="background-color: #040d20; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+  <h3 style="font-size: 1.5em; text-align: center;">Telstra Cybersecurity Job Simulation</h3> <!-- Heading added here -->
+  <p style="text-align: center; font-size: 1.1em; margin-bottom: 15px;">This job simulation immersed me in the role of a cybersecurity professional at Telstra, where I was tasked with securing the company’s extensive network infrastructure. The simulation involved identifying potential vulnerabilities, monitoring traffic for malicious activity, and deploying protective measures against cyber threats. I also focused on developing incident response protocols and enhancing the company's security posture by implementing cutting-edge cybersecurity solutions. This experience sharpened my technical and analytical skills while providing a deeper understanding of the complexities of cybersecurity in a telecom environment.</p>
+  <div style="text-align: center;">
+    <img src="assets/img/portfolio/telstra.png" alt="telstra-ctf" 
+         style="max-width: 100%; height: auto; width: 40%; transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 8px;" 
+         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" 
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"/>
+    <hr>
+  </div>
+</div>
+
+<!-- Job Simulation Item 5 -->
+<div class="job-simulation-item" style="background-color: #150202; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+  <h3 style="font-size: 1.5em; text-align: center;">Mastercard Cybersecurity Job Simulation</h3> <!-- Heading added here -->
+  <p style="text-align: center; font-size: 1.1em; margin-bottom: 15px;">In this job simulation, I focused on defending against phishing campaigns within Mastercard’s cybersecurity infrastructure. I was tasked with identifying and mitigating phishing attempts aimed at compromising sensitive data, educating employees about phishing threats, and strengthening the company's defenses. The simulation involved simulating phishing attacks, analyzing email headers, and deploying security measures such as email filtering and multi-factor authentication (MFA). This experience deepened my knowledge of social engineering tactics and enhanced my ability to protect organizations from phishing-related threats.</p>
+  <div style="text-align: center;">
+    <img src="assets/img/portfolio/mastercard.png" alt="mastercard-ctf" 
+         style="max-width: 100%; height: auto; width: 40%; transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 8px;" 
+         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" 
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"/>
+    <hr>
+  </div>
+</div>
+
+
+
+   <!-- Tools Section -->
+<section id="tools" class="services section">
+  <div class="container section-title" data-aos="fade-up">
+      <h2>Tools</h2>
+      <p>Harnessing industry-leading tools such as Kali Linux, Burp Suite, Ghidra, Metasploit, Wireshark, and more to conduct in-depth security assessments, identify vulnerabilities, and fortify systems against evolving threats.</p>
+  </div>
+  <div class="container">
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <style>
+                  .portfolio-item img {
+                      transition: transform 0.3s ease-in-out;
+                  }
+                  .portfolio-item img:hover {
+                      transform: scale(1.6);
+                  }
+              </style>
+
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/tools/kali-linux.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/tools/burp-suite.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/hydra.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/kali-beef.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/metsploit.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/wireshark.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/jhon.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/nmap.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/onion_tor.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/kali-aircrack-ng.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/wifite.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-1 col-md-4 portfolio-item isotope-item">
+                  <img src="assets/img/tools/kali-sparta.png" class="img-fluid" alt="">
+              </div>
+          </div>
+      </div>
+  </div>
+  <section id="resume" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title php-email-form" data-aos="fade-up">
+      <h2>Resume at a Glance</h2>
+      <div class="col-md-12 text-center" style="margin-top: 5%;">
+        <button class="download-btn" type="submit"><a style="color: black; font-weight: bold;" href="/assets/resume/cv.pdf">Export CV</a></button>
+      </div>
+    </div>
+    <!-- End Section Title -->
+  
+    <style>
+      .download-btn {
+        padding: 10px 20px;
+        background: #007bff;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+      }
+      .download-btn:hover {
+        background: #0056b3;
+        transform: scale(1.1);
+      }
+      
+      .ping-container {
+        background: black;
+        color: #0f0;
+        font-family: monospace;
+        padding: 20px;
+        border-radius: 5px;
+        display: none;
+      }
+      .ping-hover:hover .ping-container {
+        display: block;
+      }
+    </style>
   </section>
   
-  <section class="skills-section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Network Penetration Testing</li>
-      <li>WebApplication Penetration Testing</li>
-      <li>Bug Hunting</li>
-      <li>Computer Networking</li>
-      <li>Python Programming</li>
-      <li>C</li>
-      <li>C++</li>
-      <li>Java</li>
-      <li>JavaScript</li>
-      <li>PHP</li>
-      <li>HTML</li>
-      <li>Shell Scripting</li>
-      <li>Linux</li>
-      <!-- Add more skills as needed -->
-    </ul>
-  </section>
-  <section>
-    <h2>MY Tools</h2>
-    <p>i have created some awsome tools you should try it </p>
-    <b>AnonScan :</b>
-    <P>it is a network scanning tool used to find open and close port on the network. check my github page for more information</P>
-    <a href="https://github.com/DIGITALRAJAN22M/AnonScan.git" target="_blank">Visit AnonScan GitHub Repository</a>
-    <br>
-    <b>ANONDGR-BOT :</b>
-    <p>this is a chat bot and also it can automate tasks.check github for more info </p>
-    <a href="https://github.com/DIGITALRAJAN22M/ANONDGR-BOT.git" target="_blank">Visit GitHub Repository</a>
-    <b>DGRNET-TOOL:</b>
-    <P>DGRNET Tool is a network utility tool which provide facilites like client and server facilites </P>
-    <a href="https://github.com/DIGITALRAJAN22M/DGRNET.git" target="_blank">Visit GitHub Repository</a>
-
-  </section>
-  <section>
-    <h2>Achievements</h2>
-    <p>here are some of my achievements you can find here </p>
-    <h3>Tryhackme:</h3>
-    <script src="https://tryhackme.com/badge/2400464"></script>
-    <img src="https://tryhackme-badges.s3.amazonaws.com/rajan22m.png" alt="TryHackMe">
-    <br>
-    <b>I'M On The TOP 1% Of TryHackMe </b>
-    <br>
-    <ul class="border-list">
-    <a href="https://tryhackme-badges.s3.amazonaws.com/rajan22m.png" target="_blank">View Rajan22M Badge</a>
-    <br>
-    <a href="https://tryhackme.com/rajan22m/badges/ohsint" target="_blank">View OSINT Badge</a>
-    <br>
-    <a href="https://tryhackme.com/rajan22m/badges/mr-robot" target="_blank">View Mr-Robot Badge</a>
-    <br>
-    <a href="https://tryhackme.com/rajan22m/badges/intro-to-pentesting" target="_blank">View Penetration Testing Badge</a>
-    <br>
-    <a href="https://tryhackme.com/rajan22m/badges/security-awareness" target="_blank">View Security Awareness Badge</a>
-    <br>
-    <a href="https://tryhackme.com/rajan22m/badges/blue" target="_blank">View blue badge </a>
-    <br>
-    <a href="https://tryhackme.com/rajan22m/badges/owasp-10" target="_blank">OWASP TOP-10 </a>
-    <br>
-    <a href="https://tryhackme.com/rajan22m/badges/ice" target="_blank">ICE</a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/badge/f87701dc-b6c6-11ee-bfb6-bea50ffe6cb4">HTB ACADEMY PENTESTING</a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/badge/65885429-c24d-11ee-891c-bea50ffe6cb4">HTB ACADEMY LINUX FUNDAMENTALS </a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/badge/90db3ab0-bf87-11ee-a670-bea50ffe6cb4">HTB ACADEMY ACADEMICAIAN </a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/1144312/41">HTB ACADEMY js Deobfuscation</a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/badge/6541848a-d957-11ee-891c-bea50ffe6cb4">"HTB ACADEMY WEB REQUEST"</a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/badge/52608c28-e76e-11ee-b18d-bea50ffe6cb4">"HTB INTRO TO WEB APPLICATION"</a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/1144312/19">"NMAP MODULE "</a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/1144312/24">"File Transfer"</a>
-    <br>
-    <a href="https://tryhackme.com/ANONDGr/badges/hash-cracker">"Hash Cracker"</a>
-    <br>
-    <a href="https://tryhackme.com/ANONDGr/badges/3-million-legend">"3 Million Legend"</a>
-    <br>
-    <a href="https://tryhackme.com/ANONDGr/badges/web-fund">"Webed"</a>
-    <br>
-    <a href="https://cyber.comolho.com/static/img/candidate/badges/bb_vd_ctf_novice_explorer.png">"Novice Explorer"</a>
-    <br>
-    <a href="https://cyber.comolho.com/static/img/candidate/badges/ctf_conqueror.png">"CTF conquer"</a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/1144312/23">"LFI MODULE"</a>
-    <br>
-    <a href="https://www.hackthebox.com/achievement/machine/1719783/593">"WifineticTwo"</a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/badge/23f8a3d3-4778-11ef-b18d-bea50ffe6cb4">"root badge"</a>
-    <br>    
-    <a href="https://academy.hackthebox.com/achievement/1144312/39">"Metasploit" </a>
-    <br>    
-    <a href="https://academy.hackthebox.com/achievement/badge/400b8103-60a5-11ef-864f-bea50ffe6cb4">"Metasploit" </a>
-    <br>
-    <a href="https://www.nullclass.com/certificates/66d0612a8869b16ce19b7ece">"INTERNSHIP CERTIFICATE" </a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/1144312/74">"active directory"</a>
-    <br>
-    <a href="https://academy.hackthebox.com/achievement/badge/5e21f938-783e-11ef-864f-bea50ffe6cb4">"white belt training badge"</a>
-    </ul>
-      <section>
-      <h2>Blogs</h2>
-      <p>in this section you can find my blogs and writeups </p>
-      <a href="https://medium.com/@rajankumarbarik143/hackthebox-wifinetictwo-walkthrough-by-anondgr-621d9e5f3bdc">"WifineticTwo HTB "</a>
-      <br>
-      <a href="https://medium.com/@rajankumarbarik143/my-first-cyber-security-internship-c846a3187c32">"Internship"</a>
-      <a href="https://www.credly.com/badges/13578f6b-2bff-47c0-8f19-eec2d07abb8a/public_url">"CISCO ENDPOINT SECURITY BADGE"</a>
-      
-    </section>
-    
-    
-  </section>
-   <section class="certifications-section">
-    <h2>Certifications</h2>
-    <ul class="certifications-list">
-      <li>
-        <img src="cyber security certificate.jpg" alt="Certification 1">
-        <p>CYBER SECURITY FOR COMMON MAN</p>
-      </li>
-      <li>
-        <img src="cybersecurity2.jpg" alt="Certification 2">
-        <p>CYBER LAW PRIMER (IT ACT) INDIA</p>
-      </li>
-      <li>
-        <img src ="cybersecurity3.jpg"alt="web application security ">
-        <p>WEB-APPLICATION SECURITY</p>
-      </li>
-      <li>
-        <img src = "NullClass-undefined-Training-Certificate.png"alt="null cert">
-        <p>Internship Training</p>
-      </li>
-      <li>
-        <img src = "73821483-c93d-41de-bfab-8826a57162e4.png"alt="ECH cert">
-        <p>Ethical Hacking Essential (ECH)</p>
-      </li>
-      <li>
-        <img src = "81a5ef28-60b5-4b41-a7f1-30d9a6d74eae.png"alt="SQL cert">
-        <p>SQL Injection Attack</p>
-      </li>
-      <li>
-        <img src = "Screenshot_2024-08-30-11-48-31-91_40deb401b9ffe8e1df2f1cc5ba480b12.jpg"alt="INTERNSHIP CERTIFICATE">
-        <p>INTERNSHIP CERTIFICATE</p>
-      </li>
-      <li>
-        <img src = "Screenshot_2024-08-30-12-07-46-55_c37d74246d9c81aa0bb824b57eaf7062.jpg"alt="LOR">
-        <p>LETTER OF RECOMMENDATION</p>
-      </li>
-      <li>
-        <img src = "Screenshot_2024-08-30-12-06-46-21_c37d74246d9c81aa0bb824b57eaf7062.jpg"alt="experience letter">
-        <p>EXPERIENCE LETTER</p>
-      </li>
-         <li>
-        <img src = "Screenshot 2024-10-09 153553.png"alt="CISCO ENDPOINT SECURITY">
-        <p>CISCO END-POINT SECURITY</p>
-      </li>
-      <li>
-        <img src="Screenshot 2024-10-09 190821.png"alt="IBM CERTIFICATE">
-        <P>IBM CYBER SECURITY PROFESSIONAL(COURSERA) </P>
-      </li>
-      <li>
-        <img src="Screenshot 2024-10-13 130855.png"alt="IBM CERTIFICATE">
-        <P>IBM CYBER SECURITY PROFESSIONAL(COURSERA)with honors </P>
-      </li>
-      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b8bb20ae-5239-4d71-9934-515646e8ccba" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-      <!-- Add more certifications as needed -->
-    
-     <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="02ae3b7a-575e-4f27-9a2a-dd49f503c35c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-   </ul>
-  </section>
-  <section>
-    <h2 id="cm">Contact Me</h2>
-    <p>You can contact me on:</p>
-    <li>Contact Number: +91 8144259706</li>
-    <li>2nd Number: +91 9040622319</li>
-      <li>Email: <a href="mailto:digitalrajanofficial@gmail.com">digitalrajanofficial@gmail.com</a></li>
-    
-     <div class="logo-page">
-      <a href="https://www.instagram.com/rajan_kumar_22m/"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://github.com/DIGITALRAJAN22M"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/rajan-kumar-barik-719954276/"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://x.com/Rajan22m?t=I0UtLr2zAM67I2LZnYjTPA&s=08"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.facebook.com/RAJAN081/"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://t.me/rajankumar081"><i class="fa-brands fa-telegram"></i></a>
-      <a href="https://medium.com/@rajankumarbarik143"><i class="fa-brands fa-medium"></i></a>
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Ping Me</h2>
+      <p>Let's connect! Feel free to reach out for collaborations, inquiries, or exciting opportunities.</p>
+    </div><!-- End Section Title -->
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+      <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-5">
+  
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>+91 8144259706</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+  
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Balasore, <br> Odisha, IN </p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+  
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>digitalrajanofficial@gmail.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+  
+        </div>
       </div>
-    <img id="profile-photo" src="profilepic.jpg" alt="Rajan Kumar">
+  
+      <style>
+        .ping-hover {
+          text-align: center;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+      
+        .ping-container {
+          background-color: black;
+          color: #00ff00;
+          font-family: monospace;
+          padding: 15px;
+          border-radius: 8px;
+          text-align: left;
+          display: none;
+          transition: all 0.3s ease-in-out;
+        }
+      
+        .ping-hover:hover .ping-container {
+          display: block;
+        }
+      </style>
+      
+      <div class="ping-hover text-center">
+        <p>🛜</p>
+        <div class="ping-container">
+          <p>Appreciate your message! I'll connect with you ASAP. 🔥</p>
+        </div>
+      </div>
+      
+  
+      <form method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+        <div class="row gy-4">
+  
+          <div class="col-md-6">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+          </div>
+  
+          <div class="col-md-6 ">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+          </div>
+  
+          <div class="col-md-12">
+            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+          </div>
+  
+          <div class="col-md-12">
+            <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+          </div>
+  
+          <div class="col-md-12 text-center">
+            <button type="submit"><a style="color: black; font-weight: bold;" href="mailto:digitalrajanofficial@gmail.com">Send Email</a></button>
+          </div>
+  
+        </div>
+      </form><!-- End Contact Form -->
+  
+    </div>
+  
+  </section><!-- /Contact Section -->
+  </main>
 
-    </section>
+  <footer id="footer" class="footer accent-background">
+
+    <div class="copyright text-center ">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">ANONDGR</strong> <span>All Rights
+          Reserved</span></p>
+    </div>
+
+    
+      <div class="logo-page">
+        <a href="https://github.com/DIGITALRAJAN22M"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rajan-kumar-barik-719954276/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/Rajan22m"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://medium.com/@rajankumarbarik143"><i class="fa-brands fa-medium"></i></a>
+        <a href="https://discord.gg/vpU8xzSQ"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://www.youtube.com/@digitalrajan22m?sub_confirmation=1"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
